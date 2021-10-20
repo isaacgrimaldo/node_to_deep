@@ -4,6 +4,10 @@ const path = require('path');
 const dir = path.join(__dirname,'templates');
 const dirBuf = Buffer.from(dir, 'utf-8');
 
+/**
+ *  show all files on directoy;
+ */
+
 //sync way
 const files =  fs.readdirSync(dirBuf ,{encoding:'utf-8'});
 console.log(files);
