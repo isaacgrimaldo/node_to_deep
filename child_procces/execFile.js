@@ -2,7 +2,7 @@
 
 // child_process.execFile(file, [args] , {optiones},  callback)
 const child_process = require("child_process");
-const extension = process.platform;
+const extension = process.platform; // get the cosole type where ran the script
 
 const fileCommans = {
   linux: "./test.sh",

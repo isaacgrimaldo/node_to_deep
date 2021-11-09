@@ -1,7 +1,7 @@
 // child_process.spawn = (command, [args], {options})
 const child_process = require("child_process");
 const os = require("os");
-const sys = os.type();
+const sys = os.type(); // get the  OS
 
 const consoleCommand = {
   Windows_NT: "powershell" || "cmd",
