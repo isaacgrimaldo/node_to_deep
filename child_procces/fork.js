@@ -7,6 +7,14 @@ const modulePath = path.join(__dirname, "./modules", "program1");
 
 const data = child_process.fork(modulePath, name, {});
 
+data.on("message", (message) => {
+  console.log(message);
+});
+
+data.on("Coca", () => {
+  console.log("cocaaaaa");
+});
+
 data.on("exit", (code, single) => {
   console.log(single, code);
 });

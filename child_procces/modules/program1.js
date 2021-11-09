@@ -1,2 +1,7 @@
-const arg = process.argv.slice(2);
-console.log(arg);
+const args = process.argv.slice(2);
+
+args.forEach((arg) => {
+  process.send("Getting: " + arg);
+});
+
+console.log(args);
